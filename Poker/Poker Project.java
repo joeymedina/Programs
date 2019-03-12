@@ -1,12 +1,12 @@
 //*******************************************************************
 //* Proj4.java
-//* <Joseph Medina/ Lab  Thursday 6:00pm/ Atef Khan
+//* Joseph Medina
 //*
 //* This program resembles poker.
 //*******************************************************************/
 
 import java.util.*;
-// Project 4 Starter File
+
 
 public class Proj4 {
     
