@@ -1,0 +1,14 @@
+﻿<Window x:Class="MovieInfo.AddDirectorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieInfo"
+        mc:Ignorable="d"
+        Title="AddDirectorWindow" Height="107.563" Width="300">
+    <Grid>
+        <Button Content="Add Director" HorizontalAlignment="Left" Height="28" Margin="81,38,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="23" Margin="12,10,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="272" TextChanged="name_TextChanged"/>
+
+    </Grid>
+</Window>

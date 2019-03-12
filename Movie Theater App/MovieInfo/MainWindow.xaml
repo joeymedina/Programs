@@ -1,0 +1,50 @@
+﻿<Window x:Class="MovieInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieInfo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="517.999" Width="800">
+    <Grid Height="419" VerticalAlignment="Top">
+        <ListView x:Name="theaters" HorizontalAlignment="Left" Height="399" Margin="14,10,0,0" VerticalAlignment="Top" Width="213" SelectionChanged="theaters_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Theaters" DisplayMemberBinding="{Binding Theater}" Width="213"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="days" HorizontalAlignment="Left" Height="399" Margin="241,10,0,0" VerticalAlignment="Top" Width="123" SelectionChanged="days_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Days" DisplayMemberBinding="{Binding Path=Day}" Width="123"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="movies" HorizontalAlignment="Left" Height="399" Margin="382,10,0,0" VerticalAlignment="Top" Width="210" SelectionChanged="movies_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Movies" DisplayMemberBinding="{Binding Path=Movie}" Width="210"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="showtimes" HorizontalAlignment="Left" Height="399" Margin="609,10,0,0" VerticalAlignment="Top" Width="160" SelectionChanged="showtimes_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Showtimes" DisplayMemberBinding="{Binding Path=Showtime}" Width="160"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Admin" HorizontalAlignment="Left" Height="31" Margin="280,441,0,-53" VerticalAlignment="Top" Width="184" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Clear Selections" HorizontalAlignment="Left" Height="31" Margin="670,441,0,-53" VerticalAlignment="Top" Width="99" Click="Button_Click"/>
+
+    </Grid>
+</Window>
