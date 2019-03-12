@@ -2,7 +2,7 @@
  * 
  * Proj 6
  * 
- * Joseph Medina Thursday 6-745pm Atef Khan
+ * Joseph Medina
  * 
  * Weighted Grades 
  */
